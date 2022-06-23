@@ -1,0 +1,216 @@
+:root {
+    --main-bgc: #FFFFFF;
+    --secod-bgcr: #F5F4FA;
+    --footer-bgc: #2F303A;
+    --main-text: #212121;
+    --second-text: #757575;
+    --hover-text: #2196F3;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+
+    color: var(--main-text);
+}
+
+header,
+.feature,
+.doing {
+    background-color: var(--main-bgc);
+}
+
+footer {
+    background-color:var(--footer-bgc) ;
+}
+
+.team {
+    background: var(--secod-bgcr);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    color: var(--second-text);
+}
+
+.nav-logo {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: #000000;
+}
+
+.nav-logo.footer {
+    color: var(--main-bgc);
+}
+
+.logo-part {
+    color: var(--hover-text);
+}
+
+.nav-item {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em; 
+    color: var(--main-text);
+}
+
+.nav-item:hover {
+    color: var(--hover-text);
+}
+
+.nav-item:focus {
+    color: var(--hover-text);
+}
+
+.contacts-item {
+    color: var(--second-text);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.contacts-item:hover {
+    color: var(--hover-text);
+}
+
+.contacts-item:focus {
+    color: var(--hover-text);
+}
+
+.page-header {
+    background-color: #2F303A;
+}
+
+.page-header-text {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #FFFFFF
+}
+
+.main-button {
+    border: none;
+    background-color: var(--hover-text);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    width: 200px;
+    height: 50px;
+
+    cursor: pointer;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+}
+
+.main-button:hover {
+    background-color: #188CE8;
+}
+
+.main-button:focus {
+    background-color: #188CE8;
+}
+
+.feture-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.42;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.feature .text {
+    font-size: 14px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    color: var(--main-text);
+}
+
+.title-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}
+
+.team-item>.text {
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}
+
+.addres {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--main-bgc);
+}
+
+.addres:hover {
+    color: var(--hover-text);
+}
+
+.addres:focus {
+    color: var(--hover-text);
+}
+
+.button-radio {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    letter-spacing: 0.03em;
+    color: var(--main-text);
+
+    border: none;
+    width: 128px;
+    height: 38px;
+    background-color: var(--secod-bgcr);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button-radio:hover {
+    background-color: var(--hover-text);
+    color: var(--main-bgc);
+}
+
+.button-radio:focus {
+    background-color: var(--hover-text);
+    color: var(--main-bgc);
+}
+
+.title-job {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.text-job {
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+}
