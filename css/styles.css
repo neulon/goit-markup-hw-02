@@ -1,25 +1,33 @@
 :root {
-    --main-bgc: #FFFFFF;
     --secod-bgcr: #F5F4FA;
     --footer-bgc: #2F303A;
     --main-text: #212121;
     --second-text: #757575;
     --hover-text: #2196F3;
+    --white-text: #ffffff;
+    --black-text: #000000;
 }
 
 body {
     font-family: "Roboto", sans-serif;
-
-    color: var(--main-text);
+    color: var(--second-text);
+    letter-spacing: 0.03em;
+    font-size: 14px;
+    line-height: 1.71;
 }
 
-header,
-.feature,
-.doing {
-    background-color: var(--main-bgc);
+.header {
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
 }
 
-footer {
+.link {
+    text-decoration: none;
+    color: currentColor;
+}
+
+.footer {
     background-color:var(--footer-bgc) ;
 }
 
@@ -27,79 +35,56 @@ footer {
     background: var(--secod-bgcr);
 }
 
-ul {
+.list {
     list-style: none;
 }
 
-a {
-    text-decoration: none;
-}
-
-p {
-    color: var(--second-text);
-}
-
-.nav-logo {
+.logo {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    letter-spacing: 0.03em;
-    color: #000000;
+    color: var(--hover-text);
 }
 
-.nav-logo.footer {
-    color: var(--main-bgc);
+.logo-white {
+    color: var(--white-text);
+}
+
+.logo-black {
+    color: var(--black-text);
 }
 
 .logo-part {
     color: var(--hover-text);
 }
 
-.nav-item {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em; 
+.nav-link:focus,
+.nav-link:hover {
+    color: var(--hover-text);
+}
+
+.nav-header-list {
     color: var(--main-text);
 }
 
-.nav-item:hover {
+.contacts-link:focus,
+.contacts-link:hover {
     color: var(--hover-text);
 }
 
-.nav-item:focus {
-    color: var(--hover-text);
+.hero {
+    background-color: var(--footer-bgc);
 }
 
-.contacts-item {
-    color: var(--second-text);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-}
-
-.contacts-item:hover {
-    color: var(--hover-text);
-}
-
-.contacts-item:focus {
-    color: var(--hover-text);
-}
-
-.page-header {
-    background-color: #2F303A;
-}
-
-.page-header-text {
+.hero-title {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: #FFFFFF
+    color: var(--white-text)
 }
 
 .main-button {
@@ -107,8 +92,8 @@ p {
     background-color: var(--hover-text);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    width: 200px;
-    height: 50px;
+    min-width: 200px;
+    padding: 10px 32px;
 
     cursor: pointer;
 
@@ -116,36 +101,27 @@ p {
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
-    color: #FFFFFF;
+    color: var(--white-text);
+    font-family: inherit;
 }
 
+.main-button:focus,
 .main-button:hover {
     background-color: #188CE8;
 }
 
-.main-button:focus {
-    background-color: #188CE8;
-}
 
 .feture-title {
     font-weight: 700;
-    font-size: 14px;
     line-height: 1.42;
-    letter-spacing: 0.03em;
     text-transform: uppercase;
-}
-
-.feature .text {
-    font-size: 14px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
+    color: var(--main-text);
 }
 
 .title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
-    letter-spacing: 0.03em;
     color: var(--main-text);
 }
 
@@ -153,27 +129,20 @@ p {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
-    letter-spacing: 0.03em;
+    color: var(--main-text);
 }
 
 .team-item>.text {
     font-size: 16px;
     line-height: 1.19;
-    letter-spacing: 0.03em;
 }
 
 .addres {
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: var(--main-bgc);
+    color: var(--white-text);
 }
 
+.addres:focus,
 .addres:hover {
-    color: var(--hover-text);
-}
-
-.addres:focus {
     color: var(--hover-text);
 }
 
@@ -181,7 +150,6 @@ p {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.63;
-    letter-spacing: 0.03em;
     color: var(--main-text);
 
     border: none;
@@ -192,25 +160,22 @@ p {
     cursor: pointer;
 }
 
+.button-radio:focus,
 .button-radio:hover {
     background-color: var(--hover-text);
-    color: var(--main-bgc);
+    color: var(--white-text);
 }
 
-.button-radio:focus {
-    background-color: var(--hover-text);
-    color: var(--main-bgc);
-}
 
 .title-job {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+    color: var(--main-text);
 }
 
 .text-job {
     font-size: 16px;
     line-height: 1.88;
-    letter-spacing: 0.03em;
 }
