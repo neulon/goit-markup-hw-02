@@ -6,6 +6,7 @@
   --hover-text: #2196f3;
   --white-text: #ffffff;
   --black-text: #000000;
+  --black-transparency: rgba (255, 255, 255, 0,6)
 }
 
 body {
@@ -64,7 +65,7 @@ body {
   color: var(--hover-text);
 }
 
-.nav-header-list {
+.nav-list {
   color: var(--main-text);
 }
 
@@ -110,11 +111,14 @@ body {
   background-color: #188ce8;
 }
 
+
+
 .feature-title {
   font-weight: 700;
   line-height: 1.42;
   text-transform: uppercase;
   color: var(--main-text);
+  font-size: 14px;
 }
 
 .section-title {
@@ -122,6 +126,10 @@ body {
   font-size: 36px;
   line-height: 1.17;
   color: var(--main-text);
+}
+
+.hidden-title {
+  display: none;
 }
 
 .team-name {
@@ -136,13 +144,14 @@ body {
 }
 
 .address {
-    color: rgba(255, 255, 255, 0.6);
-    font-size: inherit;
-  }
+  color: rgba(255, 255, 255, 0.6);
+  font-size: inherit;
+}
 
 .address-link[target="_blank"] {
-    color: var(--white-text);
+  color: var(--white-text);
 }
+
 
 .address-link:focus,
 .address-link:hover {
@@ -154,6 +163,7 @@ body {
   font-size: 16px;
   line-height: 1.63;
   color: var(--main-text);
+  font-family: inherit;
 
   border: none;
   padding: 6px 22px;
